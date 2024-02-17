@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: azure;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+
+}
+.weather-app{
+background-color: rgb(234, 44, 44);
+max-width: 600px;
+margin: 50px auto;
+padding: 30px;
+border-radius: 15px;
+}
+.search-foam{
+    display: flex;
+    align-items: center;
+
+}
+input[type="text"]{
+    flex: 1;
+    padding: 20px;
+    border: 2px solid yellowgreen;
+    border-radius: 15px;
+    font-size: 1em;
+}
+.search-btn{
+    background-color: blue;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: wheat;
+    margin-left: 10px;
+    transition: background-colour 0.3s;
+}
+.search-btn:hover{
+    background-color: purple;
+}
+
+.city-date-section{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(42, 73, 165);
+}
+.city-date-section .city{
+    font-size: 2rem;
+    opacity: 0.9;
+
+}
+.city-date-section .date{
+    background-color: rgb(229, 231, 124);
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.temprature-info{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.temprature-info .temp{
+    font-size: 10rem;
+}
+.temprature-info .description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.temprature-info .description i{
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+.temprature-info .description span{
+    font-size: 1.5rem;
+}
+.aditional-info{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.wind-info, .humidity-info, .visibility-info{
+background-color: rgb(238, 162, 130);
+width: 150px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 15px;
+border-radius: 15px;
+padding: 30px 20px;
+box-shadow: tomato;
+}
+.aditional-info .material-icons{
+font-size: 2rem;
+opacity: 0.8;
+}
+.wind-info div, .humidity-info div, .visibility-info div{
+    text-align: center;
+}
